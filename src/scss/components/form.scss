@@ -1,0 +1,401 @@
+.form-calculator {
+    padding:30px 10px 10px 55px;
+    background-color:#f8f8f8;
+    background-image: url(../img/calculator-form/bg-decor.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    width: 746px;
+}
+.form__title {
+    font-size: 36px;
+    line-height: 15px;
+    color: #060202;
+    font-weight: 500;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    margin-top: 31px;
+    margin-bottom: 60px;
+}
+.form__sub-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #4e4d4d;
+    font-weight: 400;
+    font-family: "Ubuntu";
+}
+.form__select-block {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 370px;
+    gap: 3px;
+}
+
+.form__select {
+    width: 366px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #9a9b9d;
+    font-weight: 400;
+    font-family: "Ubuntu";
+    background-color: #ffffff;
+    border: 1px solid #898888;
+    margin-bottom: 25px;
+
+    appearance: none;
+    background: url("../img/calculator-form/angle-arrow-down.png") no-repeat right;
+    background-position-x: calc(100% - 15px);
+}
+
+.form__select:hover {
+    filter: drop-shadow(0px 4px 8px rgba(129,128,128,0.75));
+    color: #64892e;
+}
+.form__item {
+    width: 366px;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    border:0;
+}
+
+.form__radio-list {
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    max-width: 305px;
+    margin-top: 0;
+}
+
+.form__radio-list {
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+
+.form__radio-item {
+    width:70px;
+    position: relative;
+}
+
+.form__radiobox:checked+label{
+    color:#1450a5
+}
+
+.form__radiobox:checked+label::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:71px;
+    height:71px;
+    border:1px solid #64892e;
+    border-radius:50%
+}
+.form__radio-label {
+    font-family:"Ubuntu","Arial",sans-serif;
+    font-size:14px;
+    line-height:24px;
+    font-weight:400;
+    position:relative;
+    flex-direction:column;
+    color:#4c4c4c;
+    cursor:pointer;
+}
+
+.form__radio-label:focus
+.form__img-wrapp,
+.form__radio-label:hover
+.form__img-wrapp {
+    border:1px solid #64892e
+}
+    
+.form__img-wrapp,
+.form__radio-label {
+    display:flex;
+    align-items:center
+}
+
+.form__img-wrapp {
+    width:71px;
+    height:71px;
+    justify-content:center;
+    border-radius:50%
+}
+
+.form__radio-img {
+    border-radius:50%
+}
+
+.form__sub-title--orange {
+    color: #f29700;
+    margin-top: -20px;
+}
+
+.form__check-list,
+.form__construction-list,
+.form__radio-list {
+    padding:0;
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    width: 366px;
+}
+
+.form__check-label {
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+    color: #4e4d4d;
+    font-weight: 400;
+    font-family: "Ubuntu";
+    padding-left: 35px;
+}
+
+.form__check-item {
+    margin-bottom: 11px;
+    padding-right: 7px;
+}
+
+.form__checkbox+label::before {
+    content:"";
+    position:absolute;
+    top:-2px;
+    left:0;
+    width:25px;
+    height:25px;
+    border:1px solid #a8a8a8
+}
+
+.form__checkbox:focus+label::before,
+.form__checkbox:hover+label::before {
+    border-color:#8f8f8f
+}
+.form__checkbox:disabled+label,
+.cform__checkbox:disabled+label::before {
+    border-color:#c5c5c5;
+    opacity:.3;
+}
+.form__checkbox:checked+label::after {
+    content:"";
+    position:absolute;
+    top:6px;
+    left:6px;
+    width:15px;
+    height:11px;
+    background-image:url("../img/calculator-form/tick.png")
+}
+
+.form__submit-btn {
+    padding:24px 76px 22px;
+    margin-bottom: 40px;
+    background-color:#64892e;
+    margin-top: 30px;
+
+}
+.form__submit-btn:focus,
+.form__submit-btn:hover {
+    background-color:#fff;
+}
+
+.calculator-form__label-explanation {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    line-height:17px;
+    text-align:center;
+    position:relative;
+    right:-1px;
+    bottom:5px;
+    color:#fff;
+    border-radius:50%;
+    background-color:#b9b9b9;
+}
+
+.calculator-form__label-explanation:hover::before {
+    content:attr(data-explanation);
+    font-family:"Ubuntu";
+    font-size:12px;
+    line-height:16px;
+    font-weight:300;
+    position:absolute;
+    bottom:10px;
+    right:50%;
+    display:block;
+    width:100px;
+    min-height:32px;
+    padding:10px;
+    border-radius:2px;
+    background-color:#969696;
+    z-index:1;
+}
+
+.calculator__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 746px;
+}
+
+.form__right-section {
+    width:270px;
+    margin-top: -10px;
+}
+
+.calculator-form__construction-type-item {
+    padding-top: -20px;
+}
+
+.form__item--construction {
+    width:265px
+}
+
+.form__construction-list {
+    width: 240px;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+.form__construction-box:disabled+label,
+.form__construction-box:disabled+label::before {
+    border-color: #c5c5c5;
+    opacity: 0.3;
+}
+
+.form__construction-box:checked+label {
+    color:#1450a5;
+}
+
+.form__construction-box:checked+label::after {
+    content:"";
+    position:absolute;
+    top: -12px;
+    right: -11px;
+    width:25px;
+    height:25px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1.5px solid #f29700;
+    background-image:url("../img/calculator-form/tick.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.form__construction-label {
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.form__construction-label:hover
+.form__construction-img {
+    opacity:0.7;
+}
+
+.form__item--size {
+    width: 210px;
+    margin: 0 auto;
+    margin-left: 15px;
+}
+
+.form__size-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__size--height {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.form__size--height-width {
+    width: 47px;
+}
+
+.form__size--font {
+    font-size: 15px;
+    line-height: 24px;
+    color: #4e4d4d;
+    font-weight: 400;
+    font-family: "Ubuntu";
+}
+
+.cform__size-img {
+    position: relative
+}
+
+.form__size-img img,
+.form__size-img {
+   margin-bottom: 7px;
+}
+
+.form__size-img::after {
+    content:"";
+    display:block;
+    width:137px;
+    height:1px;
+    background-color:#373737;
+    position:absolute;
+    right:0;
+    top:143px
+}
+
+.form__size-img::before {
+    content:"";
+    display:block;
+    width: 0.5px;
+    height:136px;
+    background-color:#373737;
+    position:absolute;
+    top:0;
+    left:-7px
+}
+
+.form__price {
+    width: 270px;
+    height: 275px;
+    background-color: #f1f0f0;
+    padding: 1px 28px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.form__price-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #2b2b2a;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.form__price-value {
+    font-size: 40px;
+    line-height: 24px;
+    color: #0c0e10;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    margin-left: -8px;
+}
+
+.form__price-description {
+    font-size: 14px;
+    line-height: 18px;
+    color: #7c7c7b;
+    font-weight: 400;
+    font-family: "Ubuntu";
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.form__price-description-link {
+    color: #7c7c7b;
+    text-decoration: underline;
+}

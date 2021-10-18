@@ -1,0 +1,118 @@
+
+.form__call{
+    position: relative;
+    width: 400px;
+    padding: 45px 20px;
+    background-color: #64892e;
+}
+.form__call-title{
+    font-family: "Ubuntu","Arial",sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 18px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.call__about-employee{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.about-employee__img{
+    border-radius: 50%;
+}
+.about-employee__info{
+    width: 180px;
+    padding-top: 18px;
+    margin-left: 10px;
+}
+.about-employee__name{
+    font-family: "Ubuntu","Arial",sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+.about-employee__place{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 18px;
+}
+.about-employee__experiance{
+    font-family: "Ubuntu","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.call__form{
+    width: 310px;
+    margin: 0 auto;
+}
+.call__title{
+    font-family: "Ubuntu","Arial",sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 200px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.call__write-tel{
+    font-family: "Ubuntu","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    color: #8f8f8f;
+}
+.call__write-text{
+    font-family: "Ubuntu","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    min-height: 147px; 
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize: none;
+    padding: 20px 15px;
+    background-color: #fff;
+    color: #8f8f8f;
+}
+.call__button{
+    font-family: "Ubuntu","Arial",sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #f19700;
+    text-transform: uppercase;
+}
+.call__button:hover{
+    color: #f19700;
+    background-color: #fff;
+}
+.call__img{
+    position: absolute;
+    bottom: -10px;
+    left: -30px; 
+}

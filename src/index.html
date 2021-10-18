@@ -1,0 +1,188 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinFin</title>
+  </head>
+  <body>
+    <section class="container calculator-section">
+        <section class="form-calculator">
+            <h2 class="title form__title">Рассчитать стоимость</h2>
+            <form class="calculator__form" action="#">
+                <div class="form__left-side">
+                    <div class="form__select-block">
+                        <label class="form__sub-title">Выберите тип окна</label>
+                        <select class="form__select" name="window-type">
+                            <option value="wooden">Деревянные</option>
+                            <option value="wood-aluminum">Дерево-алюминиевые</option>
+                        </select>
+                    </div>
+                    <div class="form__select-block">
+                        <label class="form__sub-title">Выберите тип окна</label>
+                        <select class="form__select" name="window-glass">
+                            <option value="single-chamber">Однокамерный + Стекло</option>
+                            <option value="dual-chamber">Двухкамерный + Стекло</option>
+                        </select>
+                    </div>
+                    <fieldset class="form__item">
+                        <legend class="form__sub-title">Выберите тип дерева</legend>
+                        <ul class="form__radio-list">
+                            <li class="form__radio-item">
+                                <input class="form__radiobox visually-hidden" type="radio" id="pine-tree" name="tree-type" value="pine-tree" checked="checked"/>
+                                <label class="form__radio-label" for="pine-tree">
+                                    <span class="form__img-wrapp">
+                                        <img class="form__radio-img" src="img/calculator-form/tree-type/pine.jpg" width="63" height="63" alt="Сосна"/>
+                                    </span>
+                                    <span>Сосна</span>
+                                </label>
+                            </li>
+                            <li class="form__radio-item">
+                                <input class="form__radiobox visually-hidden" type="radio" id="larch-tree" name="tree-type" value="larch-tree"/>
+                                <label class="form__radio-label" for="larch-tree">
+                                    <span class="form__img-wrapp">
+                                        <img class="form__radio-img" src="img/calculator-form/tree-type/larch.jpg" width="63" height="63" alt="Лиственница" />
+                                    </span>
+                                    <span>Лиственница</span>
+                                </label>
+                            </li>
+                            <li class="form__radio-item">
+                                <input class="form__radiobox visually-hidden" type="radio" id="oak-tree" name="tree-type" value="oak-tree"/>
+                                <label class="form__radio-label" for="oak-tree">
+                                    <span class="form__img-wrapp">
+                                        <img class="form__radio-img" src="img/calculator-form/tree-type/oak.jpg" width="63" height="63" alt="Дуб"/>
+                                    </span>
+                                    <span>Дуб</span>
+                                </label>
+                            </li>
+                            <li class="form__radio-item">
+                              <input class="form__radiobox visually-hidden" type="radio" id="meranti-tree" name="tree-type" value="meranti-tree"/>
+                                <label class="form__radio-label" for="meranti-tree">
+                                    <span class="form__img-wrapp">
+                                        <img class="form__radio-img" src="img/calculator-form/tree-type/meranti.jpg" width="63" height="63" alt="Меранти"/>
+                                    </span>
+                                    <span>Меранти</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="form__item">
+                        <legend class="form__sub-title form__sub-title--orange">Дополнительные элементы</legend>
+                        <ul class="form__check-list">
+                            <li class="form__check-item">
+                                <input class="form__checkbox visually-hidden" type="checkbox" id="otliv" name="otliv" checked="checked"/>
+                                <label class="form__check-label" for="otliv">Отлив <span class="calculator-form__label-explanation" data-explanation="Заказ отлива">?</span></label>
+                            </li>
+                            <li class="form__check-item">
+                                <input class="form__checkbox visually-hidden" type="checkbox" id="folding" name="folding"/>
+                                <label class="form__check-label" for="folding">Откидной механизм<span class="calculator-form__label-explanation" data-explanation="Комплектация откидным механизмом">?</span></label>
+                            </li>
+                            <li class="form__check-item">
+                                <input class="form__checkbox visually-hidden" type="checkbox" id="lock" name="lock"/>
+                                <label class="form__check-label" for="lock">Детский замок <span class="calculator-form__label-explanation" data-explanation="Замок безопасности">?</span></label>
+                            </li>
+                            <li class="form__check-item">
+                                <input class="form__checkbox visually-hidden" type="checkbox" id="sill" name="sill"/>
+                                <label class="form__check-label" for="sill">Подоконник/Порог<span class="calculator-form__label-explanation" data-explanation="Заказ подоконника / порога">?</span></label>
+                            </li>
+                            <li class="form__check-item">
+                                <input class="form__checkbox visually-hidden" type="checkbox" id="energy-saving" name="energy-saving"/>
+                                <label class="form__check-label" for="energy-saving">Энергосберегающий<span class="calculator-form__label-explanation" data-explanation="Защита от теплопотерь">?</span></label>
+                            </li>
+                            <li class="form__check-item">
+                                <input class="form__checkbox visually-hidden" type="checkbox" id="mounting" name="mounting"/>
+                                <label class="form__check-label" for="mounting">Монтаж<span class="calculator-form__label-explanation" data-explanation="Монтаж всей системы">?</span></label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button button--green form__submit-btn" type="submit">
+                        <span class="button-text">Оформить заказ</span>
+                    </button>
+                </div>
+                <div class="form__right-section">
+                  <fieldset class="form__item form__item--construction">
+                        <legend class="form__sub-title">Тип конструкции</legend>
+                        <ul class="form__construction-list">
+                            <li>
+                                <input class="form__construction-box visually-hidden" type="radio" id="single-window" name="construction-type" value="single-window" checked="checked"/>
+                                <label class="form__construction-label" for="single-window">
+                                    <img class="form__construction-img" src="img/calculator-form/win-icons/win-icon-1.png" width="26" height="34" alt="Одностворчатое" title="Одностворчатое"/>
+                                    <span class="visually-hidden">Одностворчатое</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form__construction-box visually-hidden" type="radio" id="double-window" name="construction-type" value="double-window"/>
+                                <label class="form__construction-label" for="double-window">
+                                    <img class="form__construction-img" src="img/calculator-form/win-icons/win-icon-2.png" width="47" height="34" alt="Двустворчатое" title="Двустворчатое"/>
+                                    <span class="visually-hidden">Двустворчатое</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form__construction-box visually-hidden" type="radio" id="triple-window" name="construction-type" value="triple-window"/>
+                                <label class="form__construction-label" for="triple-window">
+                                    <img class="form__construction-img" src="img/calculator-form/win-icons/win-icon-3.png" width="56" height="34" alt="Трехстворчатое" title="Трехстворчатое" />
+                                    <span class="visually-hidden">Трехстворчатое</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="form__construction-box visually-hidden" type="radio" id="arched-window" name="construction-type" value="arched-window"/>
+                                <label class="form__construction-label" for="arched-window">
+                                    <img class="form__construction-img" src="img/calculator-form/win-icons/win-icon-4.png" width="28" height="37" alt="Арочное" title="Арочное" />
+                                    <span class="visually-hidden">Арочное</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="form__item form__item--size">
+                        <legend class="visually-hidden">Выбор размеров</legend>
+                        <div class="form__size-wrapper">
+                            <div class="form__size form__size--height">
+                                <input class="form__size--height-width" type="text" id="win-height" name="win-height" maxlength="4" required="required"/>
+                                <label class="form__size--font" for="win-height">Высота</label>
+                            </div>
+                            <div class="form__size-img">
+                                <img src="img/calculator-form/window.jpg" width="137" height="136" alt="Образец окна"/>
+                                <div class="form__size">
+                                  <label class="form__size--font" for="win-width">Ширина</label>
+                                    <input class="form__size--height-width" type="text" id="win-width" name="win-width" axlength="4" required="required"/>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+                    <div class="form__price">
+                        <h3 class="form__price-title">Стоимость окна</h3>
+                        <span class="form__price-value">13 632 р.</span>
+                        <p class="form__price-description">Обращаем Ваше внимание, что данный расчет
+                            является приблизительным. Наш менеджер сообщит Вам точную стоимость после уточнения
+                            информации.<br> Нажимая кнопку “Оформить заказ”, Вы принимаете <a href="#" class="form__price-description-link">политику конфиденциальности</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="form__call">
+            <h3 class="form__call-title">Вызвать специалиста на замер</h3>
+            <div class="call__about-employee">
+              <img src="img/calculator-form/measurer/master.jpg" alt="Замерщик" class="about-employee__img" width="178" height="178">
+              <div class="about-employee__info">
+                <p class="about-employee__name">Олег Иванов</p>
+                <p class="about-employee__place">менеджер компании WinFin</p>
+                <p class="about-employee__experiance">Опыт работы в компании WinFin более 10 лет</p>
+              </div>
+            </div>
+            <form action="#" class="call__form">
+              <p class="call__title">Возможен выезд в день обращения</p>
+              <input type="tel" class="call__write-tel" placeholder="Тел.">
+              <textarea name="comment" class="call__write-text" placeholder="Комментарий"></textarea>
+              <button type="submit" class="call__button">
+                <span>Вызвать на замер</span>
+              </button>
+            </form>
+            <img src="img/calculator-form/measurer/ruletka.png" alt="ruletka" class="call__img" width="62" height="459">
+          </div>
+        </section>wq
+</body>
+
+</html>

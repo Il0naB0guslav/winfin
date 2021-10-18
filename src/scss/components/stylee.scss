@@ -1,0 +1,40 @@
+.button{
+  position:relative;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  border:0;
+  outline:0;
+  border-radius:10px;
+  font-family:"Ubuntu";
+  font-size:16px;
+  line-height:18px;
+  font-weight:700;
+  padding: 6px 5px;
+}
+.button-text{
+  color: #fff;
+}
+.button-text:hover{
+  color: #64892e;
+}
+
+.visually-hidden {
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  padding:0;
+  overflow:hidden;
+  border:0;
+  clip:rect(0 0 0 0);
+}
+
+.calculator-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
